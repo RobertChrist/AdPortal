@@ -1,0 +1,22 @@
+At my current job, I regularly go through interviews and coding exams as part of the company culture.  
+In my experience, there are two traps one get fall into when submitting a solution like this:
+
+In the first, one submits a very simple project that directly meets the requirements of the modest programming task and does no more.
+If the reviewer is looking for a simple solution, this is great!  But if you are unlucky, you will be passed over, as in simple solutions
+there may not be enough indication of knowledge of greater programming / design considerations, 
+or indications of the ones the reviewer is interested in.
+
+On the other hand, if one creates an extensible futureproofed application, some reviewers love it!  But to others it will set off 
+alarms for over-engineered or "enterprisey" code.
+
+In this solution, I've leaned more towards the second.  Did the basic requirements of this solution really 
+mandate the use of 4 layers?  Did the specification truly call for we really need to automap from the service to a domain object?
+Perhaps not, unless of course this project was expected to grow substantially in the future.
+
+But it is my hope by adding such features, and leaving comments about others, that I have shown knowledge of the concepts presented.
+And it is my hope that by leaving this text file, this solution will not be seen as over-engineering for the
+sake of over-engineering.
+
+If you'd like to talk about why some features, and why not others, I'd love the opportunity to discuss in person. : )
+
+Robert Christ

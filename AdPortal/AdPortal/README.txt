@@ -1,0 +1,1 @@
+﻿This project represents an access point for cross cutting concerns across the Media Radar platform.

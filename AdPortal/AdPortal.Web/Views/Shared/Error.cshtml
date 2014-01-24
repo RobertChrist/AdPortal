@@ -1,0 +1,13 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Content
+{
+    <h2>@Response.StatusCode</h2>
+    <p>@ViewBag.ErrorMessage</p>
+    <p>It looks like we've encountered an error.</p>
+						
+    <p>Sorry for the inconvenience, we're looking into this now!</p>
+    <p id="return-link"><a href="/" title="back">Return to the homepage</a></p>
+}

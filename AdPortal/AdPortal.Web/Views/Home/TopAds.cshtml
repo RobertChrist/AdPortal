@@ -1,0 +1,29 @@
+﻿@model AdPortal.Domain.AdListViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Content
+{
+    <table class="table-striped">
+        <tr>
+            <th>
+                Ad Id
+            </th>
+            <th>
+                Brand Id
+            </th>
+            <th>
+                Brand Name
+            </th>
+            <th>
+                NumPages
+            </th>
+            <th>
+                Position
+            </th>
+        </tr>
+    @{ Html.RenderPartial("AdTableBodyPartial", Model); }
+    </table>
+}

@@ -1,0 +1,47 @@
+﻿@model AdPortal.Domain.PaginatedAdListViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Content
+{
+    <table class="table-striped">
+        <tr>
+            <th>
+                <a data-param="AdId" href="#">Ad Id</a>
+                <span></span>
+            </th>
+            <th>
+                <a data-param="Brand.BrandId" href="#">Brand Id</a>
+                <span></span>
+            </th>
+            <th>
+                <a data-param="Brand.BrandName" href="#">Brand Name</a>
+                <span></span>
+            </th>
+            <th>
+                <a data-param="NumPages" href="#">NumPages</a>
+                <span></span>
+            </th>
+            <th>
+                <a data-param="Position" href="#">Position</a>
+                <span></span>
+            </th>
+        </tr>
+    @{ Html.RenderPartial("AdTableBodyPartial", Model); }
+    </table>
+    
+    <div id="pagination">
+        <div id="page" class="model" data-page="@Model.Page"></div>
+        <div id="totalPageCount" class="model" data-totalpagecount="@Model.TotalPageCount"></div>
+    </div>
+}
+
+@section Scripts
+{
+    <script type="text/javascript" src="@Url.Content("~/Content/Scripts/jQuery_deparam.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/Scripts/QueryString.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/Scripts/sort.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/Scripts/pagination.js")"></script>
+}

@@ -1,0 +1,14 @@
+{
+  "vars": {},
+  "css": [
+    "tables.less",
+    "forms.less",
+    "glyphicons.less",
+    "navs.less",
+    "navbar.less",
+    "pagination.less",
+    "labels.less",
+    "utilities.less"
+  ],
+  "js": []
+}

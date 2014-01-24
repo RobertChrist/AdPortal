@@ -1,0 +1,39 @@
+﻿@model IEnumerable<AdPortal.Domain.TopBrandViewModel>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Content
+{
+    <table class="table-striped">
+        <tr>
+            <th>
+                Brand Name
+            </th>
+            <th>
+                Total Page Coverage
+            </th>
+        </tr>
+        @foreach (var topBrand in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => topBrand.BrandName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => topBrand.TotalPageCoverage)
+                </td>
+            </tr>
+        }
+        @if (Model == null || !this.Model.Any())
+        {
+            <tr>
+                <td colspan="5">
+                    No Data!
+                </td>
+            </tr>
+        }
+
+    </table>
+}

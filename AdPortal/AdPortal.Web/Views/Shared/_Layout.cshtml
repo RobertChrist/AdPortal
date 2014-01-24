@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ad Data Aggregation</title>
+        <link rel="stylesheet" style="text/css" href="@Url.Content("/Content/Styles/bootstrap.min.css")" >
+        <link rel="stylesheet" style="text/css" href="@Url.Content("/Content/Styles/Base.css")" >
+	</head>
+    <body>
+        <noscript>Please turn on javascript!  This website uses exactly one line of js to 
+            update the navigation menu, that's it!
+        </noscript>
+        <div id="container" class="center-block">
+            <header>
+                <nav>
+                    <ul class="nav nav-tabs">
+                        <li><a href="/">All Ads</a></li>
+                        <li><a href="/Home/CoverAds">Cover Ads</a></li>
+                        <li><a href="/Home/TopAds">Top Ads</a></li>
+                        <li><a href="/Home/TopBrands">Top Brands</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="content centered-block">
+                @RenderSection("Content", false)    
+            </section>
+        </div>
+        <footer>
+            <span>2014.  All rights reserved.</span>
+        </footer>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="@Url.Content("~/Content/Scripts/updateNav.js")"></script>
+        @RenderSection("Scripts", false)
+    </body>
+</html>

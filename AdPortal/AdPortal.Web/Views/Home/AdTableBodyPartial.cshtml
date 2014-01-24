@@ -1,0 +1,30 @@
+﻿@model AdPortal.Domain.AdListViewModel
+
+@foreach (var item in Model.DisplayAds)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Brand.BrandId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Brand.BrandName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumPages)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Position)
+        </td>
+    </tr>
+}
+@if (Model.DisplayAds == null || !this.Model.DisplayAds.Any())
+{
+    <tr>
+        <td colspan="5">
+            No Data!
+        </td>
+    </tr>
+}
