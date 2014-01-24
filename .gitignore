@@ -1,0 +1,69 @@
+
+# Git info
+.git/
+
+# Old SVN information
+.svn/
+
+# VS crud
+obj/
+bin/
+*.suo
+*.user
+packages/
+Debug
+*.psess
+*.vsp
+
+# Ignore everything in NevronTemp
+/src/webs/CRM/NevronTemp/*
+# Except NevronTemp itself
+!/src/webs/CRM/NevronTemp/DUMMY.txt
+
+# Ignore everything in NevronTemp
+/src/webs/Publisher/NevronTemp/*
+# Except the NevronTemp itself
+!/src/webs/Publisher/NevronTemp/DUMMY.txt
+
+#redis
+/apps/*.dat
+/apps/*.rdb
+/apps/stdout
+
+# doxygen generated files
+docs/html
+docs/latex
+docs/*.tmp
+
+# phash solution output
+/lib/thirdparty/PHash/Debug/
+/lib/thirdparty/PHash/Release/
+
+# other junk
+/db/*.out.sql
+*.log
+Publisher.xml
+/src/tasks/MagazineRadar.SwfToGif/TestResults/MagazineRadar.SwfToGif.TE.Tests.mdf
+/src/tasks/MagazineRadar.SwfToGif/TestResults/MagazineRadar.SwfToGif.TE.Tests_log.ldf
+/src/_ReSharper.Internal
+/src/tasks/AdRadarSynch/AdRadarSyncer/_ReSharper.AdRadarSyncer
+
+/src/webs/FusionChartsImageGenerator/Content/Images/Charts
+/src/webs/Publisher/temp
+/src/webs/Publisher/Excel
+/src/webs/Publisher/pdf
+/src/.axoCover/
+
+NHibernate-Redis-Cache-Log.txt
+UpgradeLog.htm
+/src/webs/CRM/CRM.vbproj.user
+
+/src/webs/Publisher.Commons.Mvc/Views/razorgenerator.directives
+/src/webs/Publisher.Web/Views/razorgenerator.directives
+build/*-test-results.xml
+
+*.vs/
+*.ncrunchproject
+Internal.v2.ncrunchsolution
+Internal.crunchsolution.cache
+/src/webs/ContentManager/build
